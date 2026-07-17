@@ -1,0 +1,108 @@
+.hero-section {
+  background: linear-gradient(146deg, #1e345c 0%, #315c98 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 104px;
+  padding-bottom: 64px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 272px center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 106px;
+    padding-bottom: 271px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-position: top 50px center;
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.hero-text-wrapper {
+  @include media(desktop) {
+    max-width: 636px;
+  }
+}
+
+.hero-main-title {
+  text-shadow: 1px 3px 6px #0b0762;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 344px;
+
+  @include media(desktop) {
+    font-size: 72px;
+    text-align: left;
+    margin-bottom: 48px;
+  }
+}
+
+.hero-subtitle {
+  text-shadow: 1px 3px 6px #0b0762;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fafafa;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    text-align: left;
+    max-width: max-content;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.hero-btn {
+  box-shadow:
+    0 2px 2px 0 rgba(42, 48, 62, 0.3),
+    inset 0 4px 8px 2px #ffb900;
+  background: #fef02b;
+  border-radius: 12px;
+  padding: 12px 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #fdd700;
+  }
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}

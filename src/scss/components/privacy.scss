@@ -1,0 +1,105 @@
+.policy-section {
+  background: #fafafa;
+  padding-top: 104px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 136px;
+    padding-bottom: 48px;
+  }
+}
+
+.policy-section h1 {
+  text-shadow: 1px 1px 2px rgba(75, 75, 75, 0.4);
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #315c98;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 80px;
+  }
+}
+
+.policy-section h2 {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1e345c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h3 {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1e345c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h4 {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #1e345c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section p {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e345c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section li {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1e345c;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  word-break: break-all;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section span {
+  @include media(desktop) {
+  }
+}
