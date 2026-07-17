@@ -1,28 +1,23 @@
 .testimonials-section {
+  @include media(desktop) {
+  }
+}
+
+.testimonials-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 312px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   background-image: url(../img/testimonials/testimonials-bg-mob.png);
   background-repeat: no-repeat;
-  background-position: top 65px right;
+  background-position: bottom center;
   background-size: auto;
 
   @include media(desktop) {
+    padding-bottom: 456px;
     max-width: 1440px;
     background-image: url(../img/testimonials/testimonials-bg-desk.png);
-    background-position: top 119px center;
-  }
-}
-
-.testimonials-bg-wrapper {
-  padding-top: 70px;
-  padding-bottom: 80px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media(desktop) {
-    max-width: 1440px;
   }
 }
 
@@ -48,25 +43,48 @@
 
   @include media(desktop) {
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 8px 32px;
+    max-width: 1063px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .testimonials-slide {
-  box-shadow: 0 4px 4px 0 rgba(75, 75, 75, 0.2);
-  background: #1e345c;
-  border: 1px solid #aacdfe;
-  border-radius: 12px;
-  padding: 23px 15px;
+  background: #e9f2f8;
+  border: 1px solid #4e6286;
+  border-radius: 8px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   @include media(desktop) {
     width: 100%;
-    max-width: 190px;
+    max-width: 333px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 3;
+    }
+
+    &:nth-child(5) {
+      order: 5;
+    }
   }
 }
 
@@ -80,22 +98,22 @@
 }
 
 .testimonials-item-name {
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #a7bcda;
+  color: #434952;
 
   @include media(desktop) {
   }
 }
 
 .testimonials-item-text {
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fafafa;
+  color: #20242b;
 
   @include media(desktop) {
   }

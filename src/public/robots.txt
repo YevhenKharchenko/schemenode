@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://brightcoveanchor.com/sitemap.xml
+Sitemap: https://schemenode.site/sitemap.xml

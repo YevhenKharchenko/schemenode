@@ -1,13 +1,5 @@
 .faq-section {
-  background: #1e345c;
-  background-image: url(../img/faq/faq-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top 35px center;
-  background-size: auto;
-
   @include media(desktop) {
-    background-image: url(../img/faq/faq-bg-desk.png);
-    background-position: top 121px center;
   }
 }
 
@@ -22,7 +14,7 @@
 }
 
 .faq-bg-wrapper {
-  padding-top: 64px;
+  padding-top: 80px;
   padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
@@ -62,7 +54,7 @@
 }
 
 .faq-item-question-wrapper {
-  border-bottom: 1px solid #aacdfe;
+  border-bottom: 1px solid #4e6286;
   padding-top: 8px;
   padding-bottom: 7px;
 
@@ -103,14 +95,17 @@
 
 .faq-icon {
   min-width: 24px;
+  stroke: #e9f2f8;
+  fill: #ee2e28;
+  transition: fill 0.3s ease-in-out;
 }
 
 .faq-btn-text {
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
-  color: #a7bcda;
+  color: #434952;
   text-align: left;
 
   @include media(desktop) {
@@ -118,11 +113,11 @@
 }
 
 .faq-bottom-text {
-  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fafafa;
+  color: #20242b;
 
   @include media(desktop) {
   }
@@ -145,6 +140,13 @@
   padding-top: 16px;
   opacity: 1;
   max-height: 500px;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-icon {
+  fill: #fed769;
 
   @include media(desktop) {
   }
